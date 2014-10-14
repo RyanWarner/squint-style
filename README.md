@@ -1,7 +1,7 @@
 squint
 ======
 
-( ! ) Work in progress. Think this project could be better? [Let me know](http://twitter.com/_rywar).
+( ! ) Work in progress. Think this project could be better? Submit a pull request, issue, or [let me know](http://twitter.com/_rywar).
 
 Squint is a verbose and spacious coding style. It favors specific naming conventions and generous whitespace. Code should be as self documenting as possible as well as easy on the eyes.
 
