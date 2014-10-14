@@ -10,10 +10,10 @@ Squint is a verbose and spacious coding style. It favors specific naming convent
 
 ## Tools
 * **[scss-lint]()** - for enforcing Sass linting rules.
-	* [View scss-lint config file]().
-	* [View documentation]() and reasoning behind this 	  config file.
+	* [View scss-lint config file](https://github.com/RyanWarner/squint-style/blob/master/config-files/scss-linting-config.yml).
+	* [View documentation](https://github.com/RyanWarner/squint-style/blob/master/docs/scss-linting-documentation.md) and reasoning behind this config file.
 * **[csscomb]()** - for convenience as well as some style options that scss-lint doesn't offer.
-	* [View css-comb config file]().
+	* [View css-comb config file](https://github.com/RyanWarner/squint-style/blob/master/config-files/.csscomb.json).
 * **[eslint]()** - for enforcing JavaScript linting rules.
 	* [View eslint config file]().
 * **[Gulp.js]()** - As streaming build system.
@@ -23,9 +23,9 @@ Squint is a verbose and spacious coding style. It favors specific naming convent
 
 **Prerequisites**
 
-* [node.js](http://nodejs.org/)
-* [Ruby](https://www.ruby-lang.org/en/)
-* [Gulp](https://github.com/gulpjs/gulp/)
+- [node.js](http://nodejs.org/)
+- [Ruby](https://www.ruby-lang.org/en/)
+- [Gulp](https://github.com/gulpjs/gulp/)
 
 1. Download all of the config files, and place them in your root directory.
 	* `git clone https://github.com/RyanWarner/squint.git`
