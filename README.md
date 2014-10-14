@@ -5,8 +5,8 @@ squint
 
 Squint is a verbose and spacious coding style. It favors specific naming conventions and generous whitespace. Code should be as self documenting as possible as well as easy on the eyes.
 
-### [Config Files]()
-### [Documentation]()
+### [Config Files](https://github.com/RyanWarner/squint-style/tree/master/config-files)
+### [Documentation](https://github.com/RyanWarner/squint-style/tree/master/docs)
 
 ## Tools
 * **[scss-lint]()** - for enforcing Sass linting rules.
