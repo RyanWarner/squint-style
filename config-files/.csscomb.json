@@ -24,7 +24,7 @@
 	"sort-order": 
 	[
 		[
-			"include"
+			"$include"
 		],
 		[
 			"content",
