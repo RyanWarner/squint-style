@@ -3,7 +3,7 @@
 
 ( ! ) Work in progress. Think this project could be better? Submit a pull request, issue, or [let me know](http://twitter.com/_rywar).
 
-Squint is a verbose and spacious coding style. It favors specific naming conventions and generous whitespace. Code should be as self documenting as possible as well as easy on the eyes.
+Squint is a verbose and spacious coding style. It favors specific naming conventions and generous whitespace. Code should be as self documenting as possible and easy on the eyes.
 
 ### [Config Files](https://github.com/RyanWarner/squint-style/tree/master/config-files)
 ### [Documentation](https://github.com/RyanWarner/squint-style/tree/master/docs)
