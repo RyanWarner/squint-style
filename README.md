@@ -1,4 +1,5 @@
-# squint-style ![](http://squint-style.guide/images/squinty-face-small.svg)
+# squint-style
+![](http://squint-style.guide/images/squinty-face-small.svg)
 
 ( ! ) Work in progress. Think this project could be better? Submit a pull request, issue, or [let me know](http://twitter.com/_rywar).
 
