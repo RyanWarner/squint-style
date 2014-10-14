@@ -1,4 +1,4 @@
-# squint-style
+# squint-style ![](https://github.com/RyanWarner/squint-site/blob/master/images/squint.svg)
 
 ( ! ) Work in progress. Think this project could be better? Submit a pull request, issue, or [let me know](http://twitter.com/_rywar).
 
