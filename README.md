@@ -25,19 +25,19 @@ Squint is a verbose and spacious coding style. It favors specific naming convent
 
 - [node.js](http://nodejs.org/)
 - [Ruby](https://www.ruby-lang.org/en/)
-- [Gulp](https://github.com/gulpjs/gulp/)
 
-
-1. Download all of the config files, and place them in your root directory.
+1. Install gulp.js
+	- `npm install -g gulp`
+2. Download all of the config files, and place them in your root directory.
 	* `git clone https://github.com/RyanWarner/squint-style.git`
-2. Install scss-lint and respective Gulp plugin.
+3. Install scss-lint and respective Gulp plugin.
 	* `gem install scss-lint`
 	* `npm install --save-dev gulp-scss-lint`.
-3. Install csscomb Gulp plugin.
+4. Install csscomb Gulp plugin.
 	* `npm install gulp-csscomb --save-dev`
-4. Install eslint Gulp plugin.
+5. Install eslint Gulp plugin.
 	* `npm install --save-dev gulp-eslint`
-5. Add Gulp tasks for all 3 tools. See example gulpfile.js.
+6. Add Gulp tasks for all 3 tools. See example gulpfile.js.
 
 - - -
 
