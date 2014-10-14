@@ -1,5 +1,4 @@
-squint
-======
+# squint-style
 
 ( ! ) Work in progress. Think this project could be better? Submit a pull request, issue, or [let me know](http://twitter.com/_rywar).
 
