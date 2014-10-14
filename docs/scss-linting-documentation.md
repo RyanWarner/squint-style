@@ -1,6 +1,11 @@
-# SCSS Linters
+# SCSS Linting Documentation
 
-Below is a list of linters supported by `scss-lint`, ordered alphabetically.
+- [scss-lint](https://github.com/causes/scss-lint)
+- [gulp plugin](https://github.com/juanfran/gulp-scss-lint)
+
+Squint uses [scss-lint](https://github.com/causes/scss-lint) and its [gulp plugin](https://github.com/juanfran/gulp-scss-lint) to lint its scss. This file is a mofication of the official scss-lint documentation. It contains a list of linters supported by `scss-lint`, ordered alphabetically with some reasoning behind certain decisions.
+
+## Linters
 
 * [BorderZero](#borderzero)
 * [ColorKeyword](#colorkeyword)
@@ -57,21 +62,10 @@ color: green;
 
 **Good: hexadecimal color**
 ```scss
-color: #0f0;
+color: #00ff00;
 ```
 
-Defining colors directly in properties is usually a smell. When you color your
-body text in a number of places, if you ever want to change the color of the
-text you'll have to update the explicitly defined color in a number of places,
-and finding all those places can be difficult if you use the same color for
-other elements (i.e. a simple find/replace may not always work).
-
-A better approach is to use global variables like `$color-text-body` and refer
-to this variable everywhere you want to use it. This makes it easy to update
-the color, as you only need change it in one place. It is also more
-intention-revealing, as seeing the name `$color-text-body` is more descriptive
-than `#333` or `black`. Using color keywords can obfuscate this, as they look
-like variables.
+Defining colors instead of hexadecimal values is usually harmful because color keywords look like variables, making it hard to distinguish them at a glace.
 
 ## Comment
 
@@ -200,7 +194,7 @@ Place `@else` statements on a new line.
 
 ## EmptyLineBetweenBlocks
 
-Separate rule, function, and mixin declarations with empty lines.
+To help visually breakup concerns, separate rule, function, and mixin declarations with empty lines.
 
 **Bad: no lines separating blocks**
 ```scss
@@ -272,8 +266,7 @@ Files should always have a final newline. This results in better diffs when
 adding lines to the file, since SCM systems such as git won't think that you
 touched the last line.
 
-You can customize whether or not a final newline exists with the `present`
-option.
+See "[Why should files end with a newline?](http://stackoverflow.com/questions/729692/why-should-files-end-with-a-newline)"
 
 ## HexLength
 
@@ -548,14 +541,7 @@ See [Mastering Sass extends and placeholders](http://8gramgorilla.com/mastering-
 
 ## PropertySortOrder
 
-Sort properties in a strict order. By default, will require properties be
-sorted in alphabetical order, as it's brain dead simple (highlight lines and
-execute `:sort` in `vim`), and it can
-[benefit gzip compression](http://www.barryvan.com.au/2009/08/css-minifier-and-alphabetiser/).
-
-You can also specify an explicit ordering via the `order` option, which allows
-you to specify an explicit array of properties representing the preferred
-order, or the name of a
+This option is off, in favor of letting CSSComb do this for us. If you do not wish to use CSSComb, you can specify an explicit ordering via the `order` option, which allows you to specify an explicit array of properties representing the preferred order, or the name of a
 [preset order](https://github.com/causes/scss-lint/tree/master/data/property-sort-orders).
 If a property is not in your explicit list, it will be placed at the bottom of
 the list, disregarding its order relative to other unspecified properties.
@@ -596,15 +582,6 @@ margin: 5px;
 In this case, this is usually avoided by using mixins from a framework like
 [Compass](http://compass-style.org/) or [Bourbon](http://bourbon.io/) so
 vendor-specific properties rarely need to be explicitly written by hand.
-
-If you are specifying an explicit order for properties, note that
-vendor-prefixed properties will still be ordered based on the example above
-(i.e. you only need to specify normal properties in your list).
-
-Configuration Option | Description
----------------------|---------------------------------------------------------
-`order`              | Array of properties, or the name of a [preset order](https://github.com/causes/scss-lint/tree/master/data/property-sort-orders) (default is `nil`, resulting in alphabetical ordering)
-`ignore_unspecified` | Whether to ignore properties that are not explicitly specified in `order` (default **false**)
 
 ## PropertySpelling
 
@@ -681,10 +658,6 @@ Deep selectors also come with a performance penalty, which can affect rendering
 times, especially on mobile devices. While the default limit is 3, ideally it
 is better to use less than 3 whenever possible.
 
-Configuration Option | Description
----------------------|---------------------------------------------------------
-`max_depth`          | Maximum depth before reporting errors (default **3**)
-
 ## SelectorFormat
 
 It is good practice to choose a convention for naming selectors.
@@ -718,16 +691,16 @@ Configuration Option | Description
 
 ## Shorthand
 
-Prefer the longest, most verbose longhand form possible for properties that support it.
+Use shorthand where possible. The order is top, right, bottom, left.
 
-**Bad: equivalent to specifying 1px for all sides**
-```scss
-margin: 1px;
-```
-
-**Good: all 4 sides specified with same value**
+**Bad: all 4 sides specified with same value**
 ```scss
 margin: 1px 1px 1px 1px;
+```
+
+**Good: equivalent to specifying 1px for all sides**
+```scss
+margin: 1px;
 ```
 
 ## SingleLinePerProperty
@@ -835,7 +808,7 @@ margin: 0;
 
 ## SpaceBeforeBrace
 
-Opening braces should be preceded by a single space.
+Currently turned off until there is support for new line brefore brace.
 
 **Bad: no space before brace**
 ```scss
@@ -851,26 +824,21 @@ p  {
 }
 ```
 
-**Good**
+**Bad**
 ```scss
 p {
   ...
 }
 ```
 
-Setting `allow_single_line_padding` to `true` allows you to use extra spaces to
-nicely align single line blocks, so you can write:
-
+**Good**
 ```scss
-.icon-chevron-up    { &:before { content: "\e030"; } }
-.icon-chevron-down  { &:before { content: "\e031"; } }
-.icon-chevron-left  { &:before { content: "\e032"; } }
-.icon-chevron-right { &:before { content: "\e033"; } }
+p
+{
+  ...
+}
 ```
 
-Configuration Option        | Description
-----------------------------|---------------------------------------------------
-`allow_single_line_padding` | Allow single line blocks to have extra spaces for nicer formatting (default **false**)
 
 ## SpaceBetweenParens
 
@@ -1070,7 +1038,7 @@ for more information.
 
 ## ZeroUnit
 
-Don't omit length units on zero values. You might come back to change this later and forget what units you are using in the rest of the .scss.
+Omit length units on zero values.
 
 **Bad: unnecessary units**
 ```scss

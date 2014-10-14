@@ -24,6 +24,9 @@
 	"sort-order": 
 	[
 		[
+			"include"
+		],
+		[
 			"content",
 			"display",
 			"table-layout",
