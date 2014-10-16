@@ -41,11 +41,24 @@ Squint is a verbose and spacious coding style. It favors specific naming convent
 
 - - -
 
-"BE CONSISTENT.
-
+> BE CONSISTENT.
+> 
 If you're editing code, take a few minutes to look at the code around you and determine its style. If they use spaces around all their arithmetic operators, you should too. If their comments have little boxes of hash marks around them, make your comments have little boxes of hash marks around them too.
-
+> 
 The point of having style guidelines is to have a common vocabulary of coding so people can concentrate on what you're saying rather than on how you're saying it. We present global style rules here so people know the vocabulary, but local style is also important. If code you add to a file looks drastically different from the existing code around it, it throws readers out of their rhythm when they go to read it. Avoid this." - [Google](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
+
+## Other CSS Style Guides
+
+- [GitHub](https://github.com/styleguide/css)
+- [Google](https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml)
+- [Wordpress](https://make.wordpress.org/core/handbook/coding-standards/css/)
+- [Idiomatic CSS](https://github.com/necolas/idiomatic-css)
+- ["CSS Style Guides"](http://css-tricks.com/css-style-guides/) - CSS Tricks
+
+## Other JavaScript Style Guides
+
+- [Airbnb](https://github.com/airbnb/javascript)
+- [Idiomatic JS](https://github.com/rwaldron/idiomatic.js)
 
 - - -
 Inspired by [@lilhinx](http://twitter.com/lilhinx).
