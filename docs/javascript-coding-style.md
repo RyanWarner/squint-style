@@ -15,6 +15,4 @@
 * Use lowercase letters in hex codes.
 * Use `'` not `"`.
 * Use `//` for comments, not `/* */`.
-* Always specify leading 0s, like `0.5`.
-* Use longhand values, be explicit and avoid shorthand.
-* Selectors be written in hyphenated lowercase, not [CamelCase](http://en.wikipedia.org/wiki/CamelCase) or [snake_case](http://en.wikipedia.org/wiki/Snake_case).
+* Variables should be written in [CamelCase](http://en.wikipedia.org/wiki/CamelCase) not [snake_case](http://en.wikipedia.org/wiki/Snake_case).
