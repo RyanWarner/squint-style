@@ -1,8 +1,9 @@
 
 # JavaScript Coding Style
 
+This is a living documentation detailing the squint-style JavaScript best practices.
 
-### Spacing and Indentation
+## Spacing and Indentation
 
 * Properties and values should be clearly separated from their selectors using Allman Style indentation, meaning a new line before `{`.
 * To increase readability, put spaces between parenthesis `(  )`.
@@ -10,20 +11,20 @@
 * Use `tabs` for semantic indentation, and `spaces` for presentational spacing.
 * There should always be a new line at the end of every file.
 
-### Formatting
+## Formatting
 
 * Use lowercase letters in hex codes.
 * Use `'` not `"`.
 * Use `//` for comments, not `/* */`.
 * Always specify leading 0s, like `0.5`.
 * Use longhand values, be explicit and avoid shorthand.
-* Selectors be written in hyphenated lowercase, not [CamelCase](http://en.wikipedia.org/wiki/CamelCase) or [snake_case](http://en.wikipedia.org/wiki/Snake_case).
+* Varibles should be written in [CamelCase](http://en.wikipedia.org/wiki/CamelCase) not [snake_case](http://en.wikipedia.org/wiki/Snake_case).
 
-### Build Process
+## Build Process
 
 Projects should always have some form a build process to prepare for deployment. Use [Gulp](http://gulpjs.com) to create a `build` or `deploy` task that minifies and concatenates.
 
-### Tests
+## Tests
 
 Projects must include some form of unit or end to end testing.
 
@@ -32,10 +33,9 @@ Projects must include some form of unit or end to end testing.
 - [Sinon](http://sinonjs.org/)
 - [Chai](http://chaijs.com/)
 
-### Beautiful, spacious syntax.
+## Beautiful, spacious syntax.
 
-Use whitespace to improve readability. 
-
+- Use whitespace to improve readability.
 - Parens and braces should have spaces between them.
 - Use Allman style indentation to clearly separate control statements from their code blocks. Additionally, it becomes easier to see dangling or mismatched braces.
 - Groups of like items should be separated by 3 blank lines.
@@ -69,3 +69,52 @@ for( var i = 0; i < 100; i++ )
 	someFunction(  );
 }
 ```
+
+## Blocks
+
+## Comments
+
+- Use `//` over `/* ... */`.
+- Comments should always be preceded by a blank line.
+- Comments start with a capital first letter and when writing a full sentence, end with a `.`.
+
+**Bad**
+```
+var email;
+/* a function */
+var send = function(  )
+{
+	...
+}
+```
+
+**Good**
+```
+var email;
+
+// Send the email.
+var send = function(  )
+{
+	...
+}
+```
+
+## Variables
+
+## Functions
+
+## Conditional Statements
+
+## Naming Conventions
+
+## Whitespace
+
+## Quotes.
+
+Use single quotes `'` not double quotes `"`.
+
+## Commas
+
+## Semicolons
+
+Always use semicolons. Never rely on [automatic semicolon insertion](http://inimino.org/~inimino/blog/javascript_semicolons) (ASI).
