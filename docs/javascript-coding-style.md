@@ -6,10 +6,17 @@ This is a living documentation detailing the squint-style JavaScript best practi
 ## Spacing and Indentation
 
 - Properties and values should be clearly separated from their selectors using Allman Style indentation, meaning a new line before `{`.
+
 - To increase readability, put spaces between parenthesis `(  )`.
 	- See [space-in-parens](https://github.com/RyanWarner/squint-style/blob/master/docs/javascript-linting-documentatio.md#space-in-parens) and [new-parens](https://github.com/RyanWarner/squint-style/blob/master/docs/javascript-linting-documentatio.md#new-parens) linters.
+
+- There should also be spaces between brackets and braces.
+	- See [space-in-brackets](https://github.com/RyanWarner/squint-style/blob/master/docs/javascript-linting-documentatio.md#space-in-brackets).
+
 - Additionally, there should be a space after every `,` and a space after every `:`.
+
 - Use `tabs` for semantic indentation, and `spaces` for presentational spacing.
+
 - There should always be a new line at the end of every file.
 
 

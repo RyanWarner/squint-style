@@ -95,3 +95,34 @@ doSomething( 'something' );
 ```
 
 See eslint docs for [space-in-parens](http://eslint.org/docs/rules/space-in-parens.html).
+
+## space-in-brackets
+
+`"space-in-brackets": [2, "always"]`
+
+All brackets should have have spaces between them, including empty brackets.
+
+**Bad**
+
+```
+var myObject = {};
+
+var myFunction = function( ['1','2','3'] )
+{
+	// do something
+};
+
+```
+
+**Good**
+
+```
+var myObject = {  };
+
+var myFunction = function( [ '1','2','3' ] )
+{
+	// do something
+};
+```
+
+See eslint docs for [space-in-brackets](http://eslint.org/docs/rules/space-in-brackets).
