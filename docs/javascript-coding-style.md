@@ -186,8 +186,6 @@ var getColor = function(  )
 }
 ```
 
-## Whitespace
-
 ## Quotes.
 
 Use single quotes `'` not double quotes `"`.
