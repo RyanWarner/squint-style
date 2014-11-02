@@ -113,7 +113,9 @@ Always explicitely declare variables.
 
 ## Functions
 
-Declare functions as variables.
+Express functions as variables.
+
+See [func-style]() linter.
 
 **Bad**
 ```

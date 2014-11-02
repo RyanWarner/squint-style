@@ -15,3 +15,23 @@ See [eslint configuration docs](http://eslint.org/docs/configuring/).
 Brace style is turned off because eslint does not support enforcing Allman style indentation / brace style.
 
 See eslint docs for [brace-style](http://eslint.org/docs/rules/brace-style.html).
+
+## func-style
+
+`"func-style": [2, "expression"]`
+
+**Bad**
+```
+function ludacrisSpeed(  )
+{
+	...
+}
+```
+
+**Good**
+```
+var ludacrisSpeed = function(  )
+{
+	...
+};
+```
