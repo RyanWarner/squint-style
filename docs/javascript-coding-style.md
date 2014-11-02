@@ -13,16 +13,14 @@ This is a living documentation detailing the squint-style JavaScript best practi
 
 ## Formatting
 
-* Use lowercase letters in hex codes.
 * Use `'` not `"`.
 * Use `//` for comments, not `/* */`.
 * Always specify leading 0s, like `0.5`.
-* Use longhand values, be explicit and avoid shorthand.
 * Varibles should be written in [CamelCase](http://en.wikipedia.org/wiki/CamelCase) not [snake_case](http://en.wikipedia.org/wiki/Snake_case).
 
 ## Build Process
 
-Projects should always have some form a build process to prepare for deployment. Use [Gulp](http://gulpjs.com) to create a `build` or `deploy` task that minifies and concatenates.
+Projects should always have some form of build process to prepare for deployment. Use [Gulp](http://gulpjs.com) to create a `build` or `deploy` task that minifies and concatenates.
 
 ## Tests
 
@@ -101,11 +99,92 @@ var send = function(  )
 
 ## Variables
 
+Always explicitely declare variables.
+
+**Bad**
+```
+
+```
+
+**Good**
+```
+
+```
+
 ## Functions
 
-## Conditional Statements
+Declare functions as variables.
+
+**Bad**
+```
+function ludacrisSpeed(  )
+{
+	...
+}
+```
+
+**Good**
+```
+var ludacrisSpeed = function(  )
+{
+	...
+};
+```
+
+## Comparison Operators
+
+Use `===` and `!==` over `==` and `!=`.
+
+Some people [disagree about this](http://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/#more-2108).
+
+> "A strict comparison (e.g., ===) is only true if the operands are of the same type. The more commonly used abstract comparison (e.g. ==) converts the operands to the same Type before making the comparison." 
+> 
+> See [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators) on MDN.
+
+
+## Conditional Expressions
+
+Don't use shortcuts. Using shortcuts reduces the code's readablitiy.
+
+**Bad** 
+
+Read: "If email do something."
+```
+if( email )
+{
+	// something
+}
+```
+
+**Good**
+
+Read: "If email is not equal to empty, do something."
+```
+if( email !== '' )
+{
+	// something
+}
+```
 
 ## Naming Conventions
+
+Code should be as self documenting as possible. This means that names should be descriptive, not cryptic.
+
+**Bad**
+```
+var gc = function(  )
+{
+	return c;
+}
+```
+
+**Good**
+```
+var getColor = function(  )
+{
+	return color;
+}
+```
 
 ## Whitespace
 
@@ -115,6 +194,67 @@ Use single quotes `'` not double quotes `"`.
 
 ## Commas
 
+Don't use leading commas.
+
+**Bad**
+```
+var starship =
+{
+  , class: 'Starfighter'
+  , model: 'A-Wing'
+  , length: '9.6m'
+  , width: '6.48m'
+}
+```
+
+**Good**
+```
+var starship =
+{
+	class: 'Starfighter',
+	model: 'A-Wing',
+	length: '9.6m',
+	width: '6.48m'
+}
+```
+
+No trailing / dangling commas.
+
+**Bad**
+```
+var starship =
+{
+	class: 'Light freighter',
+	model: 'Modified YT-1300',
+	
+}
+```
+
+**Good**
+```
+var starship =
+{
+	class: 'Light freighter',
+	model: 'Modified YT-1300'
+}
+```
+
 ## Semicolons
 
 Always use semicolons. Never rely on [automatic semicolon insertion](http://inimino.org/~inimino/blog/javascript_semicolons) (ASI).
+
+**Bad**
+```
+var getColor = function(  )
+{
+	return color
+}
+```
+
+**Good**
+```
+var getColor = function(  )
+{
+	return color;
+};
+```

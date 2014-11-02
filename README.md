@@ -1,5 +1,9 @@
-# squint-style
 [![](http://squint-style.guide/images/squinty-face-small.svg)](http://squint-style.guide)
+# squint-style
+
+> "Code quality is defined by how easily and efficiently it can be changed."
+
+This project aims to help improve code quality. Consistency in code style increases readablility and changability of code.
 
 ( ! ) Work in progress. Think this project could be better? Submit a pull request, issue, or [let me know](http://twitter.com/_rywar).
 
