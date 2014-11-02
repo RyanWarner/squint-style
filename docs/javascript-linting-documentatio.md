@@ -35,3 +35,61 @@ var ludacrisSpeed = function(  )
 	...
 };
 ```
+
+See eslint docs for [func-style](http://eslint.org/docs/rules/func-style.html).
+
+## new-cap
+
+`"new-cap": 2`
+
+Constructors should begin with a capital letter.
+
+**Bad**
+
+`var xWing = new starfighter(  );`
+
+**Good**
+
+`var xWing = new Starfighter(  );`
+
+See eslint docs for [new-cap](http://eslint.org/docs/rules/new-cap.html).
+
+## new-parens
+
+`"new-parens": 2`
+
+Constructors should always include `(  )` even if it has no arguments.
+
+**Bad**
+
+`var xWing = new Starfighter`
+
+**Good**
+
+`var xWing = new Starfighter(  )`
+
+See eslint docs for [new-parens](http://eslint.org/docs/rules/new-parens.html).
+
+## space-in-parens
+
+`"space-in-parens": [2, "always"]`
+
+All parenstheses should have have spaces between them, including parens with no arguments.
+
+**Bad**
+
+```
+var train = new Train();
+
+doSomething('something');
+```
+
+**Good**
+
+```
+var train = new Train(  );
+
+doSomething( 'something' );
+```
+
+See eslint docs for [space-in-parens](http://eslint.org/docs/rules/space-in-parens.html).
