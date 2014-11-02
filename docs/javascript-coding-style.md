@@ -13,7 +13,7 @@ This is a living documentation detailing the squint-style JavaScript best practi
 - There should also be spaces between brackets and braces.
 	- See [space-in-brackets](https://github.com/RyanWarner/squint-style/blob/master/docs/javascript-linting-documentatio.md#space-in-brackets).
 
-- Additionally, there should be a space after every `,` and a space after every `:`.
+- Additionally, there should be a space after every `,` and a space after every `:`, but not before.
 
 - Use `tabs` for semantic indentation, and `spaces` for presentational spacing.
 
@@ -111,6 +111,21 @@ Always explicitely declare variables.
 **Good**
 ```
 
+```
+
+Variables should be named using camelCase style. This is enforced by the [camelcase]() linter.
+
+**Bad**
+```
+var multiword_variable_name;
+
+var multiwordvariablename;
+```
+
+**Good**
+
+```
+var multiWordVariableName
 ```
 
 ## Functions

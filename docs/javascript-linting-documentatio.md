@@ -126,3 +126,22 @@ var myFunction = function( [ '1','2','3' ] )
 ```
 
 See eslint docs for [space-in-brackets](http://eslint.org/docs/rules/space-in-brackets).
+
+## camelcase
+
+`"camelcase": 2`
+
+**Bad**
+```
+var multiword_variable_name;
+
+var multiwordvariablename;
+```
+
+**Good**
+
+```
+var multiWordVariableName
+```
+
+See eslint docs for [camelcase](http://eslint.org/docs/rules/camelcase.html).
