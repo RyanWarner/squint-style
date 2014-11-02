@@ -1,5 +1,7 @@
 # JavaScript Linters
 
+View [eslint config file](https://github.com/RyanWarner/squint-style/blob/master/config-files/.eslintrc).
+
 This file attmepts to make note of important linters in squint-style. It does not address every linter. If you want to see all of them, read the [entire list of eslint rules](http://eslint.org/docs/rules/).
 
 - 0 - turn the rule off
