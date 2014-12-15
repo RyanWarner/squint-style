@@ -1,7 +1,7 @@
 
 # Jade Coding Style
 
-While there is no Jade linter that I know of, we should make it our responsibillity to follow these guidelines when writing Jade templates.
+To my knowledge, there is no Jade linter available. Despite this, it is still important to keep a consistent style when writing Jade.
 
 ## Quotes
 
@@ -17,7 +17,7 @@ Consistent with JavaScript, always use single quotes.
 
 ## Plain Text
 
-Use piped text on a new line. Being consistent with plain text location makes it easier to find and change. Sometimes element attribute lines in combination with plain text can get unweildy.
+Even with syntax highlighting, text can sometimes blend in with the tag or atributes. For readability, always place piped text on a new line.
 
 **Bad**
 
@@ -29,34 +29,6 @@ Use piped text on a new line. Being consistent with plain text location makes it
 p
     | I went for a Sunday jog.
 ```
-
-## Space Inside Parenthesis
-
-There should always be a single space inside parenthesis.
-
-**Bad**
-
-`a(href="http://squint-style.guide")`
-
-**Good**
-
-`a( href='http://squint-style.guide' )`
-
-## Class and ID Declarations
-
-Wherever possible, favor literal syntax as opposed to attributes.
-
-**Bad**
-
-`div( class='avatar' )`
-
-`div( id='content' )`
-
-**Good**
-
-`.avatar`
-
-`#content`
 
 ## Block Expansion
 
@@ -73,3 +45,46 @@ div
     span
         | Hello World
  ```
+
+
+## Space Inside Parenthesis
+
+There should always be a single space inside parenthesis.
+
+**Bad**
+
+`a(href="http://squint-style.guide")`
+
+**Good**
+
+`a( href='http://squint-style.guide' )`
+
+## 
+
+## Class and ID Declarations
+
+Wherever possible, favor literal syntax as opposed to attributes.
+
+**Bad**
+
+`div( class='avatar' )`
+
+`div( id='content' )`
+
+**Good**
+
+`.avatar`
+
+`#content`
+ 
+## Commas Between Attributes
+ 
+For reabability, always put a comma between attribute definiteions.
+ 
+**Bad**
+ 
+`input( type='range' min='0' max='100' )`
+
+**Good**
+ 
+ `input( type='range', min='0', max='100' )`
