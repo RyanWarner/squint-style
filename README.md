@@ -1,20 +1,35 @@
-[![](http://squint-style.guide/images/squinty-face-small.svg)](http://squint-style.guide)
-# squint-style
+# [![](http://squint-style.guide/images/squinty-face-small.svg)](http://squint-style.guide) squint-style 
 
 Squint is a verbose and spacious coding style. It favors specific naming conventions and generous whitespace. Code should be as self documenting as possible and easy on the eyes.
 
-> "Code quality can be measured by how easily and efficiently it can be changed."
+-
 
-This project aims to help improve code quality. Consistency in code style increases readablility and changability of code.
+> BE CONSISTENT.
+ 
+> If you're editing code, take a few minutes to look at the code around you and determine its style. If they use spaces around all their arithmetic operators, you should too. If their comments have little boxes of hash marks around them, make your comments have little boxes of hash marks around them too.
+ 
+> The point of having style guidelines is to have a common vocabulary of coding so people can concentrate on what you're saying rather than on how you're saying it. We present global style rules here so people know the vocabulary, but local style is also important. If code you add to a file looks drastically different from the existing code around it, it throws readers out of their rhythm when they go to read it. Avoid this." - [Google](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
+
+-
+
+> Code quality can be measured by how efficiently it can be changed.
+
+-
+
+
+This project aims to help developers in their pursuit of more efficiently writing code that is lasting and welcoming to change.
 
 ( ! ) Work in progress. Think this project could be better? Submit a pull request, issue, or [let me know](http://twitter.com/_rywar).
 
+-
 
+Read the **[Documentation](https://github.com/RyanWarner/squint-style/tree/master/docs)** to learn the defaults with code examples.
 
-### [Config Files](https://github.com/RyanWarner/squint-style/tree/master/config-files)
-### [Documentation](https://github.com/RyanWarner/squint-style/tree/master/docs)
+ Use the **[Config Files](https://github.com/RyanWarner/squint-style/tree/master/config-files)** in combination with the tools listed below to enforce good code style on your projects.
+
 
 ## Tools
+
 * **[scss-lint](https://github.com/causes/scss-lint)** - for enforcing Sass linting rules.
 	* [View scss-lint config file](https://github.com/RyanWarner/squint-style/blob/master/config-files/scss-linting-config.yml).
 	* [View documentation](https://github.com/RyanWarner/squint-style/blob/master/docs/scss-linting-documentation.md) and reasoning behind this config file.
@@ -45,13 +60,6 @@ This project aims to help improve code quality. Consistency in code style increa
 	* `npm install --save-dev gulp-eslint`
 6. Add Gulp tasks for all 3 tools. See [example gulpfile.js](https://github.com/RyanWarner/jade-sass-seed/blob/master/gulpfile.js).
 
-- - -
-
-> BE CONSISTENT.
-> 
-If you're editing code, take a few minutes to look at the code around you and determine its style. If they use spaces around all their arithmetic operators, you should too. If their comments have little boxes of hash marks around them, make your comments have little boxes of hash marks around them too.
-> 
-The point of having style guidelines is to have a common vocabulary of coding so people can concentrate on what you're saying rather than on how you're saying it. We present global style rules here so people know the vocabulary, but local style is also important. If code you add to a file looks drastically different from the existing code around it, it throws readers out of their rhythm when they go to read it. Avoid this." - [Google](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
 
 ## Other CSS Style Guides
 
