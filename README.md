@@ -73,6 +73,9 @@ Read the **[Documentation](https://github.com/RyanWarner/squint-style/tree/maste
 
 - [Airbnb](https://github.com/airbnb/javascript)
 - [Idiomatic JS](https://github.com/rwaldron/idiomatic.js)
+- [Google](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
+- [Dojo](http://dojotoolkit.org/community/styleGuide)
+- [jQuery](http://contribute.jquery.org/style-guide/js/)
 
 - - -
 Inspired by [@lilhinx](http://twitter.com/lilhinx).
