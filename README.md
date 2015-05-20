@@ -30,6 +30,8 @@ Read the **[Documentation](https://github.com/RyanWarner/squint-style/tree/maste
 
 ## Tools
 
+A coding style guide is a complex thing. It can be hard to remember all the rules, especially when just starting out. In order to help enforce squint-style (or any style guide) you can use the following tools:
+
 * **[scss-lint](https://github.com/causes/scss-lint)** - for enforcing Sass linting rules.
 	* [View scss-lint config file](https://github.com/RyanWarner/squint-style/blob/master/config-files/scss-linting-config.yml).
 	* [View documentation](https://github.com/RyanWarner/squint-style/blob/master/docs/scss-linting-documentation.md) and reasoning behind this config file.
@@ -41,6 +43,8 @@ Read the **[Documentation](https://github.com/RyanWarner/squint-style/tree/maste
 	* [View example gulp file](https://github.com/RyanWarner/jade-sass-seed/blob/master/gulpfile.js).
 
 ## Setup
+
+To setup the tools mentioned above in your project you can use these instructions as a guide. You can also use the example Gulp tasks as a starting point for your project.
 
 **Prerequisites**
 
