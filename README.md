@@ -39,6 +39,7 @@ A coding style guide is a complex thing. It can be hard to remember all the rule
 	* [View css-comb config file](https://github.com/RyanWarner/squint-style/blob/master/config-files/.csscomb.json).
 * **[eslint](http://eslint.org/)** - for enforcing JavaScript linting rules.
 	* [View eslint config file](https://github.com/RyanWarner/squint-style/blob/master/config-files/.eslintrc).
+	* [Shareable eslint config](https://www.npmjs.com/package/eslint-config-squint-style)
 * **[Gulp.js](http://gulpjs.com/)** - As streaming build system.
 	* [View example gulp file](https://github.com/RyanWarner/jade-sass-seed/blob/master/gulpfile.js).
 
